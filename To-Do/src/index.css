@@ -1,0 +1,149 @@
+/* Styling the general container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type='text'] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* To-Do Section Styling */
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.toDoItems {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.toDoItems div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin-left: 5px;
+    background-color: #28a745;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#submitButton {
+    background-color: #0056b3;
+}
+
+button:nth-child(2) {
+    background-color: #dc3545;
+}  
+
+button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+button:nth-child(3),
+button:nth-child(4) {
+    background-color: #ffc107;
+}
+
+button:nth-child(3):hover {
+    background-color: #e0a800;
+}
+
+button:nth-child(4):hover {
+    background-color: #e0a800;
+}
+
+/* Completed Tasks Section Styling */
+.completedContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.completedItems {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.completedItems div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Red button for completed tasks */
+.completedItems button {
+    margin-left: 5px;
+    background-color: #dc3545; /* Red button for remove */
+    color: white;
+}
+
+.completedItems button:hover {
+    background-color: #c82333;
+}
+
+/* Clear All Button */
+button[type='button'] {
+    background-color: #007bff;
+    padding: 8px 16px;
+}
+
+button[type='button']:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+h2 {
+    margin-top: 30px;
+}
