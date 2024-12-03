@@ -11,8 +11,15 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setToDo([...toDo, search]);
-    setSearch("");
+    if(search.trim() == "") {
+      setSearch("");
+    }
+    else 
+    {
+      setToDo([...toDo, search]);
+      setSearch("");
+    }
+
   }
 
   function moveUp(i) {
